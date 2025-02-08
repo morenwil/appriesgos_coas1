@@ -15,7 +15,7 @@ with st.sidebar:
     #INPUTS DE LA APLICACION
     principal = st.number_input('Valor Préstamo Solicitado', 500, 50000)
     finalidad = st.selectbox('Finalidad Préstamo', ['Compra Cartera','Tarjeta Crédito','Hogar','otro'])
-    num_cuotas = st.radio('Número Cuotas', ['36 months','60 months'])
+    num_cuotas = st.radio('Número Cuotas', ['36 meses','60 meses'])
     ingresos = st.slider('Ingresos anuales', 20000, 300000)
 
     #DATOS CONOCIDOS (fijadas como datos estaticos por simplicidad)
@@ -138,7 +138,7 @@ if st.sidebar.button('CALCULAR RIESGO'):
     #Prescripcion
     col1,col2 = st.columns(2)
     with col1:
-        st.write('La pérdida esperada es de (Euros):')
+        st.write('La pérdida esperada es de (Pesos):')
         st.metric(label="PÉRDIDA ESPERADA", value = kpi_el)
     with col2:
         st.write('Se recomienda un extratipo de (Euros):')
