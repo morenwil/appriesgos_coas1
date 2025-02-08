@@ -141,7 +141,7 @@ if st.sidebar.button('CALCULAR RIESGO'):
         st.write('La pérdida esperada es de (Pesos):')
         st.metric(label="PÉRDIDA ESPERADA", value = kpi_el)
     with col2:
-        st.write('Se recomienda un extratipo de (Euros):')
+        st.write('Se recomienda un extratipo de (Pesos):')
         st.metric(label="COMISIÓN A APLICAR", value = kpi_el * 3) #Metido en estático por simplicidad
 
 else:
