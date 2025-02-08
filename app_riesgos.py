@@ -14,7 +14,7 @@ with st.sidebar:
 
     #INPUTS DE LA APLICACION
     principal = st.number_input('Valor Préstamo Solicitado', 500, 50000)
-    finalidad = st.selectbox('Finalidad Préstamo', ['debt_consolidation','credit_card','home_improvement','other'])
+    finalidad = st.selectbox('Finalidad Préstamo', ['Compra Cartera','Tarjeta Crédito','Hogar','otro'])
     num_cuotas = st.radio('Número Cuotas', ['36 months','60 months'])
     ingresos = st.slider('Ingresos anuales', 20000, 300000)
 
